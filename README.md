@@ -1,14 +1,13 @@
 # 使用selenium web driver进行自动化测试（使用Ruby语言）
 
 ## 说明
-- slides 分支包含了四次分享的幻灯片
+- 包含了四次分享的幻灯片
  - 0-css.html css选择器的使用
  - 1-foundation.html selenium基础
  - 2-usecase.html selenium web driver 接口使用
  - 3-realworld.html selenium在项目里的使用
 
-* sources 分支包含了四次分享的源代码和素材
-
+* sources目录下包含了四次分享的源代码和素材
 
 ## 代码运行
 * 0-css 中的例子只需要一个现代浏览器
