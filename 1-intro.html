@@ -48,6 +48,7 @@
 						<li>Setting up ChromeDriver for Google Chrome</li>
 						<li>Finding Elements</li>
 						<li>Working with Elements</li>
+						<li>More Selenium API</li>
 					</ul>
 				</section>
 
@@ -57,7 +58,8 @@
 						<p>概述</p>
 					</section>
 					<section>
-						<h2>For Ruby</h2>
+						<img src="./images/1-0.png">
+						<a href="http://www.seleniumhq.org/">http://www.seleniumhq.org/</a>
 
 					</section>
 				</section>
@@ -153,12 +155,95 @@
 						</table>
 					</section>
 					<section>
-						
+						<ul>
+							<li><a href="./sources/1-intro/find_element.rb">./sources/1-intro/find_element.rb</a></li>
+							<li><a href="./sources/1-intro/jquery.rb">./sources/1-intro/jquery.rb</a></li>
+							<li><a href="./sources/1-intro/load_jquery.rb">./sources/1-intro/load_jquery.rb</a></li>
+						</ul>
 					</section>
 				</section>
+				<section>
+					<section>
+						<h2>Working with Elements</h2>
+						<p>节点操作</p>
+					</section>
+					<section>
+						<h2>Common Elements</h2>
+						<p>Selenium::WebDriver::Element</p>
+						<ul>
+							<li>.text</li>
+							<li>.attribute</li>
+							<li>.css_value</li>
+							<li>.clear</li>
+							<li>.sendKeys</li>
+							<li>.submit</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Select Tag</h2>
+						<p>Selenium::WebDriver::Support::Select</p>
+						<pre><code>
+select.select_by(:value, "Honda")
+assert_equal "Honda", select.first_selected_option.text
+						</code></pre>
+						<a href="./sources/1-intro/select.rb">./sources/1-intro/select.rb</a>
+					</section>
+					<section>
+						<h2>Radio buttons and radio groups</h2>
+						<a href="./sources/1-intro/radio.rb">./sources/1-intro/radio.rb</a>
+					</section>
+					<section>
+						<h2>Checkboxes</h2>
+						<a href="./sources/1-intro/checkbox.rb">./sources/1-intro/checkbox.rb</a>
+					</section>
+					<section>
+						<h2>Actions</h2>
+						<p>Selenium::WebDriver::ActionBuilder</p>
+						<pre>
+							<code>
+driver.action.key_down(:shift).
+	click(element).
+	click(second_element).
+	key_up(:shift).
+	drag_and_drop(element, third_element).
+	perform
+							</code>
+						</pre>
+						<ul>
+							<li><a href="./sources/1-intro/click.rb">./sources/1-intro/click.rb</a></li>
+							<li><a href="./sources/1-intro/drag_and_drop.rb">./sources/1-intro/drag_and_drop.rb</a></li>
+						</ul>
+					</section>
 
-				
-
+				</section>
+				<section>
+					<section>
+						<h2>More Selenium API</h2>
+						<p>其他 API</p>
+					</section>
+					<section>
+						<h2>screenshot</h2>
+						<a href="./sources/1-intro/screenshots.rb">./sources/1-intro/screenshots.rb</a>
+					</section>
+					<section>
+						<h2>maximizing the browser window</h2>
+						<a href="./sources/1-intro/maximizing.rb">./sources/1-intro/maximizing.rb</a>
+					</section>
+					<section>
+						<h2>Handle session cookies</h2>
+						<a href="./sources/1-intro/cookie.rb">./sources/1-intro/cookie.rb</a>
+					</section>
+					<section>
+						<h2>browser navigation</h2>
+						<a href="./sources/1-intro/navigate.rb">./sources/1-intro/navigate.rb</a>
+					</section>
+					<section>
+						<h2>working with WebDriver events</h2>
+						<p>Selenium::WebDriver::Support::AbstractEventListener</p>
+						<a href="./sources/1-intro/events.rb">./sources/1-intro/events.rb</a>
+					</section>
+				</section>
 				
 
 			</div>
