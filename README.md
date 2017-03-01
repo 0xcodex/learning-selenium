@@ -8,7 +8,6 @@
  - 3-advanced.html Advanced features 
 
 ## How to run demo
-- codes in 0-css only needs a modern web browser
 - ruby codes in 1-intro and 2-foundation needs install Ruby(>= 2.3) first, Selenium Standalone Server, Chromedriver
 - codes in 3-advanced need more tools, see 3-advanced.html for more details
 
@@ -25,6 +24,5 @@
 - sources目录下包含了四次分享的源代码和素材
 
 ## 代码运行
-- 0-css 中的例子只需要一个现代浏览器
-- 其他项目需要安装Ruby(>= 2.3),Selenium Standalone Server,Chromedriver
+- 需要安装Ruby(>= 2.3),Selenium Standalone Server,Chromedriver
 - 如果想把测试跑在服务器上，进行无图形用户界面的测试，需要安装PhantomJS及对应的 WebDriver

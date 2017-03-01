@@ -26,6 +26,6 @@ class BaiduSearch < Test::Unit::TestCase
   end
 
   def teardown
-  	@driver.quit
+  	#@driver.quit
   end
 end
