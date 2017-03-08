@@ -6,3 +6,4 @@ driver.get "http://mps.hailiangtong.com"
 
 driver.save_screenshot('/Users/liyuhang/pics/pic_remote.png')
 
+driver.quit

@@ -11,6 +11,9 @@ class CookieDemo < Test::Unit::TestCase
   def test_cookie
   	@driver.get(@base_url)
 
+    old = @driver.manage.cookie_named("test1")
+    assert old.nil?
+
   	@driver.manage.add_cookie({ 
       name: "test1",
       value: "1"})

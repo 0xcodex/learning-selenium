@@ -20,7 +20,7 @@ class AlertDemo < Test::Unit::TestCase
     end 
 
     assert_equal "Hello! I am an alert box!", alert.text
-
+  
     alert.accept
   end
 
